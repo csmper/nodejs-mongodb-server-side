@@ -6,7 +6,7 @@ const app = express()
 const path = require('path')
 const api = require('./routes/api')
 
-const port = 5000
+const port = 4000
 
 app.use(cors())
 app.use(bodyParser.json())
