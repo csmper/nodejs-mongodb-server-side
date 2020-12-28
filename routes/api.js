@@ -8,7 +8,7 @@ const User = require('../models/user')
 const Event = require('../models/event')
 
 const mongoose = require('mongoose')
-mongoose.connect(process.env.DB_CONNECT,  { useNewUrlParser: true, useUnifiedTopology: true }, err => {
+mongoose.connect("mongodb+srv://usersuhas:suhas@clusterevents.9rhpm.mongodb.net/eventsdb?retryWrites=true&w=majority",  { useNewUrlParser: true, useUnifiedTopology: true }, err => {
     if(err) {
         console.error(err)
     } else{
